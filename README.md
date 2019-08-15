@@ -89,6 +89,18 @@ Development app or program, using resources : Properties, Settings, Command, any
   /test/apache-tomcat-8.5.27/bin/startup.sh
   ```
 
+- If you want to add environment-variables
+
+  ```
+  -- HOST-NAME is not same
+  JAVA_HOME=/home/HOST-NAME/html/bf/java-se-8u40-ri
+  JRE_HOME=/home/HOST-NAME/html/bf/java-se-8u40-ri/jre
+  CATALINA_HOME=/home/HOST-NAME/html/bf/apache-tomcat-8.5.43
+  CLASSPATH=.:$JAVA_HOME/lib/tools.jar:$CATALINA_HOME/lib/jsp-api.jar:$CATALINA_HO
+  ME/lib/servlet-api.jar
+  PATH=$PATH:$JAVA_HOME/bin:$CATALINA_HOME/bin
+  export JAVA_HOME CLASSPATH CATALINA_HOME JRE_HOME
+  ```
 
 
 ### For Spring-app
